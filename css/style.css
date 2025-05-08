@@ -1,0 +1,604 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: #000000;
+    color: white;
+
+    max-width: 1280px;
+    margin: auto;
+}
+
+/* ---------------------------------------------------- HOME -------------------------------------------------------- */
+
+
+.container-home{
+    /* border: 1px solid #ff2020; */
+    height: 100vh;
+}
+
+.menu{
+    display: flex;
+    margin: auto;
+    margin-top: 2%;
+    width: 400px;
+    justify-content: space-around;
+    padding: 20px;
+    font-weight: 200;
+    list-style: none;
+
+    && a{
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 20px;
+        
+    }
+
+    && a:hover{
+        color: #909090;
+        font-weight: 400;
+        transition: 0.5s;
+    }
+
+}
+
+
+.service{
+    margin-top: 150px;
+    && img{
+        margin: auto;
+        width: 75%;
+        display: block;
+        margin-top: 50px;
+    }
+}
+
+
+.deslize{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 70px;
+
+    && h3{
+        font-weight: 200;
+        font-size: 16px;
+        padding: 20px;
+        text-transform: uppercase;
+        color: #969696;
+    }
+}
+
+/* ---------------------------------------------------- SOBRE -------------------------------------------------------- */
+
+.container-sobre{
+    /* border: 1px solid #b1ff20; */
+    height: 100vh;
+}
+
+.sobre {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    align-content: center;
+   margin-top: 2%;
+  }
+  
+  .col-img {
+    grid-column: 1;
+    text-align: center;
+
+  }
+  
+  .col-txt {
+    grid-column: 2;
+    /* border: 1px solid blue; */
+
+    && h1{
+        font-weight: 200;
+        font-size: 40px;
+        padding: 20px;
+        text-transform: uppercase;
+    }
+
+    && h3{
+        font-weight: 600;
+        font-size: 26px;
+        padding: 20px;
+    }
+
+    && p{
+        font-weight: 200;
+        font-size: 26px;
+        padding: 20px;
+    }
+
+  }
+
+  .empresas {
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+
+        && h3{
+            font-weight: 400;
+            font-size: 22px;
+            padding: 20px;
+            text-transform: uppercase;
+            text-align: center;
+        }      
+    }
+
+    
+
+    .empresas img.empresasdesk {
+        width: 95%;
+        margin: auto;
+        display: block;
+      }
+
+    .empresas img.empresasmobile {
+        display: none;
+    }
+    
+
+
+/* ---------------------------------------------------- FIM SOBRE -------------------------------------------------------- */
+
+/* ---------------------------------------------------- PORTFOLIO -------------------------------------------------------- */
+
+.container-portfolio{
+    /* border: 1px solid #29bbff; */
+    height: 100vh;
+
+
+    && h1{
+        font-weight: 200;
+        font-size: 60px;
+        padding: 50px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    /* --------- botao */
+
+    && a{
+        font-weight: 400;
+        font-size: 18px;
+        padding: 20px;
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    && a:hover{
+        color: #000000;
+        font-weight: 400;
+        transition: 0.5s;
+    }
+
+    && button{
+        display: block;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        padding: 15px 50px;
+        background-color: #ffffff00;
+        border: 1px solid white;
+        border-radius: 25px;
+        }
+
+    && button:hover{
+        background-color: #ffffff;
+        color: #000000;
+        transition: 0.5s;
+    }
+
+}
+
+
+.portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+    gap: 10px;
+}
+
+
+    .portfolio img{
+        width: 100%;
+        align-items: center;
+        /* border: 1px solid #ff0000; */
+    }
+
+
+  
+  .grid-item.image-1 {
+    grid-column: 1;
+  }
+  
+  .grid-item {
+    grid-column: 1;
+  }
+  
+  .grid-item.text {
+    grid-column: 2;
+  }
+  
+  .grid-item.image-2 {
+    grid-column: 3;
+  }
+
+
+  /* ---------------------------------------------------- FIM PORTFOLIO -------------------------------------------------------- */
+
+  /* ---------------------------------------------------- CONTATO -------------------------------------------------------- */
+
+  .contato{
+    /* border: 1px solid #db29ff; */
+    height: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+
+
+
+    && h1{
+        font-weight: 200;
+        font-size: 60px;
+        padding: 30px;
+        margin-top: 30px;
+        text-transform: uppercase;
+      }
+  }
+
+  .destaque{
+    font-size: 36px;
+    padding: 30px;
+  }
+
+  .txt-final{
+    font-size: 26px;
+    align-items: center;
+    margin: auto;
+    width: 65%;
+  }
+
+  .email{
+    display: inline-block;
+    margin: 0;
+
+    && button{
+        padding: 15px 50px;
+        background: linear-gradient(270deg, #0B2260 0%, #1F5DA6 100%);    border: none;
+        border-radius: 100px;
+        margin: auto;
+        margin-top: 40px;
+        margin-right: 0px;
+    }
+    
+
+    && a{
+        font-size: 26px;
+        color: white;
+        text-decoration: none;
+    }
+  }
+
+  .wpp{
+    display: inline-block;
+    margin: 0;
+
+    && button{
+        padding: 15px 50px;
+        background: linear-gradient(270deg, #037E08 0%, #30BC24 100%);
+        border: none;
+        border-radius: 100px;
+        margin: auto;
+        margin-top: 40px;
+        margin-left: 10px;
+    }
+   
+
+    && a{
+        font-size: 26px;
+        color: white;
+        text-decoration: none;
+    }
+
+  }
+
+   /* ---------------------------------------------------- FIM CONTATO -------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+   
+   /* ---------------------------------------------------- RESPONSIVIDADE -------------------------------------------------------- */
+
+   @media screen and (max-width: 600px) {
+  
+    .container-home{
+        max-width: 1280px;
+        margin: auto;
+        height: 100vh;
+        }
+
+    .menu{
+        display: flex;
+        margin: auto;
+        margin-top: 5%;
+        justify-content: space-around;
+        padding: 20px;
+        font-weight: 200;
+        list-style: none;
+
+        && a{
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 20px;
+            
+        }
+
+        && a:hover{
+            color: #909090;
+            font-weight: 400;
+            transition: 0.5s;
+        }
+
+    }
+
+
+    .service{
+        margin-top: 250px;
+        && img{
+            margin: auto;
+            width: 85%;
+        }
+    }
+
+
+    .deslize{
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        margin-top: 300px;
+
+
+
+        && h3{
+            font-weight: 200;
+            font-size: 16px;
+            padding: 20px;
+            text-transform: uppercase;
+            color: #969696;
+        }
+    }
+
+/* ---------------------------------------------------- SOBRE -------------------------------------------------------- */
+
+
+    .container-sobre{
+        margin: auto;
+        height: 100vh;
+        text-align: center;
+    }
+
+    .sobre {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    
+    .col-img {
+        text-align: center;
+
+        && img{
+            width: 75%;
+            margin-top: -20px;
+        }
+
+    }
+    
+    .col-txt {
+
+        && h1{
+            font-weight: 200;
+            font-size: 40px;
+            padding: 20px;
+            text-transform: uppercase;
+        }
+
+        && h3{
+            font-weight: 600;
+            font-size: 22px;
+            padding: 10px 20px;
+        }
+
+        && p{
+            font-weight: 200;
+            font-size: 16px;
+            padding: 10px 20px;
+        }
+
+    }
+
+    .empresas {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    
+            && h3{
+                font-weight: 400;
+                font-size: 22px;
+                padding: 20px;
+                text-transform: uppercase;
+                text-align: center;
+            }      
+
+        }
+    
+        .empresas img.empresasdesk {
+            
+            display: none;
+          }
+    
+        .empresas img.empresasmobile {
+            width: 95%;
+            margin: auto;
+            display: block;
+        }
+        
+
+
+/* ---------------------------------------------------- FIM SOBRE -------------------------------------------------------- */
+
+/* ---------------------------------------------------- PORTFOLIO -------------------------------------------------------- */
+    .container-portfolio{
+        margin: 220px auto auto auto;
+        height: 100%;
+        && h1{
+            font-weight: 200;
+            font-size: 40px;
+            padding: 30px 0px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        /* --------- botao */
+
+        && a{
+            font-weight: 400;
+            font-size: 18px;
+            padding: 20px;
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        && a:hover{
+            color: #000000;
+            font-weight: 400;
+            transition: 0.5s;
+        }
+
+        && button{
+            display: block;
+            margin: auto;
+            margin-top: 40px;
+            margin-bottom: 30px;
+            padding: 15px 30px;
+            background-color: #ffffff00;
+            border: 1px solid white;
+            border-radius: 25px;
+            }
+
+        && button:hover{
+            background-color: #ffffff;
+            color: #000000;
+            transition: 0.5s;
+        }
+
+    }
+
+
+    .portfolio {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 85%;
+    }
+
+
+        .portfolio img{
+            width: 100%;
+            margin: auto;
+        }
+
+    
+
+  /* ---------------------------------------------------- FIM PORTFOLIO -------------------------------------------------------- */
+
+  /* ---------------------------------------------------- CONTATO -------------------------------------------------------- */
+    .contato{
+
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        text-align: center;
+
+        && h1{
+            font-weight: 200;
+            font-size: 40px;
+            padding: 10px;
+            margin-top: 30px;
+            text-transform: uppercase;
+        }
+    }
+
+    .destaque{
+        font-size: 22px;
+        padding: 0px 30px;
+    }
+
+    .txt-final{
+        font-size: 16px;
+        align-items: center;
+        font-weight: 200;
+        width: 80%;
+
+    }
+
+    .email{
+        margin: 0;
+
+        && button{
+            padding: 15px 50px;
+            background: linear-gradient(270deg, #0B2260 0%, #1F5DA6 100%);    border: none;
+            border-radius: 100px;
+            margin: auto;
+            margin-top: 40px;
+            margin-right: 0px;
+        }
+        
+
+        && a{
+            font-size: 18px;
+            color: white;
+            text-decoration: none;
+        }
+    }
+
+    .wpp{
+        margin: 0;
+
+        && button{
+            padding: 15px 50px;
+            background: linear-gradient(270deg, #037E08 0%, #30BC24 100%);
+            border: none;
+            border-radius: 100px;
+            margin: auto;
+            margin-top: 40px;
+        }
+    
+
+        && a{
+            font-size: 18px;
+            color: white;
+            text-decoration: none;
+        }
+
+    }
+
+   /* ---------------------------------------------------- FIM CONTATO -------------------------------------------------------- */
+
+   }
